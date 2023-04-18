@@ -1,0 +1,14 @@
+#Python function that removes duplicates from an amount in a list
+#also sum up all the items
+# remove 7% VAT from that amount
+# prints the amount.
+
+vat_percentage = 7 
+
+numbers = [12, 14, 16, 18, 20,10,12, 20, 14, 90]
+remove_dul = set(numbers)
+nummbers = list(remove_dul)
+sum_total = sum(numbers)
+vat_cal = sum_total * vat_percentage / 100
+new_amount = sum_total - vat_cal
+print("this is total sum of all numbers after removing all duplicates is",sum_total, "and taking 7% is",vat_cal,"and the balance is", new_amount)   
